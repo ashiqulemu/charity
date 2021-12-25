@@ -76,3 +76,21 @@ function increamntQty() {
   let product_total_price = document.getElementById("product_total_price");
   product_total_price.innerHTML = price;
 }
+
+
+
+function dec() {
+  let val = document.getElementById('cartValue').value--;
+
+  if (val <= 0) {
+      document.getElementById('dec').disabled = true;
+  }
+}
+
+
+function inc() {
+  let val = document.getElementById('cartValue').value++;
+  if (val >= 0) {
+      document.getElementById('dec').disabled = false;
+  }
+}

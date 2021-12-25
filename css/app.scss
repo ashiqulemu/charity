@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul{
+
+ul {
   padding: 0;
 }
 
@@ -1145,7 +1146,7 @@ footer {
       }
     }
 
-    .sidenav { 
+    .sidenav {
       width: 100%;
       margin: 7px auto;
       list-style: none;
@@ -1173,7 +1174,7 @@ footer {
           margin: 1px 0;
 
           &:hover {
-            background-color: #0962A8; 
+            background-color: #0962A8;
 
             a {
               color: $white;
@@ -1185,7 +1186,7 @@ footer {
           }
 
           &.active {
-            background: #0962A8; 
+            background: #0962A8;
 
             a {
               color: $white;
@@ -1434,7 +1435,7 @@ footer {
 
 .profile {
   .title-section {
-    background-color: lighten($primary, 60%); 
+    background-color: lighten($primary, 60%);
     padding: 19px 24px;
     color: #515e64;
     font-weight: bold;
@@ -1482,7 +1483,7 @@ footer {
 
   &:hover {
     background-color: lighten($primary, 6%);
-    transform: translateY(-3px);
+    // transform: translateY(-3px);
   }
 }
 
@@ -1719,10 +1720,15 @@ footer {
   }
 }
 
+.table>:not(:first-child) {
+  border-top: 1px solid #c0c6d3;
+}
+
 .table-custom {
   border: 1px solid #eaeaea;
   border-radius: 4px;
   overflow: hidden;
+
 
   th,
   td {
@@ -1732,13 +1738,14 @@ footer {
 
   thead {
     tr {
-      background-color: #eaecf9;
+      background-color: #e4e9f3;
 
       th {
         border: 0;
         text-transform: capitalize;
         font-size: 15px;
-        color: #5e5c61;
+        color: #707070;
+        padding: 10px 16px;
       }
     }
   }
@@ -1747,8 +1754,9 @@ footer {
     tr {
       td {
         border: 0;
-        color: #545356;
         font-size: 14px;
+        color: #707070;
+        padding: 10px 16px;
 
         a {
           color: $primary;
@@ -2193,9 +2201,9 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center; 
+  -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;  
+  align-items: center;
   box-shadow: -3px 11px 20px 5px #0000001f;
 
   .items {
@@ -2226,7 +2234,7 @@ footer {
 
   }
 
-  @media(min-width:600px){
+  @media(min-width:600px) {
     &:before {
       content: '';
       border-top: 40px solid #ff000000;
@@ -2239,7 +2247,7 @@ footer {
       position: absolute;
       top: -40px;
     }
-  
+
     &:after {
       content: '';
       border-top: 40px solid #ff000000;
@@ -2254,10 +2262,10 @@ footer {
     }
   }
 
-  
+
 }
 
-.transferFunds{
+.transferFunds {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2265,16 +2273,18 @@ footer {
   padding: 14px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
-  .para{
+
+  .para {
     flex: 1;
   }
-  .pointer{
+
+  .pointer {
     width: 60px;
-    height: 60px; 
+    height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius:5px;
+    border-radius: 5px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2288,18 +2298,120 @@ footer {
 }
 
 
-fieldset{
+fieldset {
   box-shadow: -2px 3px 10px 0px #0000000a;
   margin: 20px 0;
   padding: 30px;
   border: 1px solid #ebeced;
-  
-  legend{
+
+  legend {
     font-size: 16px !important;
-    font-weight: bold; 
+    font-weight: bold;
     width: fit-content;
     padding: 0 10px;
   }
 }
 
- 
+.nav-tabs .nav-link {
+  color: $theme;
+
+  &.active {
+    background: $primary;
+    color: #fff;
+  }
+}
+
+
+.gdp-form {
+  input[type='radio'] {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.standardOptions {
+  display: none;
+}
+
+#standard {
+  &:checked+label+.standardOptions {
+    display: block !important;
+  }
+}
+
+.orderInfo {
+  height: 320px;
+  width: 320px;
+  padding: 60px;
+  border-radius: 50%;
+  background: #d3d3d336;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cart {
+  min-width: 120px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+   button {
+    outline: none;
+    border: 0;
+    font-size: 24px;
+    margin: 0 5px;
+    width: 25px;
+}
+ input {
+  width: 40px;
+  padding: 0 3px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+}
+}
+
+.orderVoucher{
+  .voucher{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-bottom: 1px solid #ebebeb;
+    .items{
+      flex: 1;
+      &:nth-child(1){
+        font-weight: bold;
+      }
+      &:nth-child(2){
+        text-align: center;
+      }
+      &:nth-child(3){
+        text-align: right;
+        font-weight: bold;
+      }
+    }
+  }
+}

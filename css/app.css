@@ -1684,8 +1684,6 @@ footer .social-sites li a .iconify {
 
 .btn-theme:hover {
   background-color: #85d0f4;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
 }
 
 .btn-danger {
@@ -1954,6 +1952,10 @@ footer .social-sites li a .iconify {
   color: #fff;
 }
 
+.table > :not(:first-child) {
+  border-top: 1px solid #c0c6d3;
+}
+
 .table-custom {
   border: 1px solid #eaeaea;
   border-radius: 4px;
@@ -1967,20 +1969,22 @@ footer .social-sites li a .iconify {
 }
 
 .table-custom thead tr {
-  background-color: #eaecf9;
+  background-color: #e4e9f3;
 }
 
 .table-custom thead tr th {
   border: 0;
   text-transform: capitalize;
   font-size: 15px;
-  color: #5e5c61;
+  color: #707070;
+  padding: 10px 16px;
 }
 
 .table-custom tbody tr td {
   border: 0;
-  color: #545356;
   font-size: 14px;
+  color: #707070;
+  padding: 10px 16px;
 }
 
 .table-custom tbody tr td a {
@@ -2612,5 +2616,123 @@ fieldset legend {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 10px;
+}
+
+.nav-tabs .nav-link {
+  color: #4D4D4D;
+}
+
+.nav-tabs .nav-link.active {
+  background: #69c5f1;
+  color: #fff;
+}
+
+.gdp-form input[type='radio'] {
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.gdp-form label {
+  cursor: pointer;
+}
+
+.standardOptions {
+  display: none;
+}
+
+#standard:checked + label + .standardOptions {
+  display: block !important;
+}
+
+.orderInfo {
+  height: 320px;
+  width: 320px;
+  padding: 60px;
+  border-radius: 50%;
+  background: #d3d3d336;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cart {
+  min-width: 120px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.cart button {
+  outline: none;
+  border: 0;
+  font-size: 24px;
+  margin: 0 5px;
+  width: 25px;
+}
+
+.cart input {
+  width: 40px;
+  padding: 0 3px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.orderVoucher .voucher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.orderVoucher .voucher .items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.orderVoucher .voucher .items:nth-child(1) {
+  font-weight: bold;
+}
+
+.orderVoucher .voucher .items:nth-child(2) {
+  text-align: center;
+}
+
+.orderVoucher .voucher .items:nth-child(3) {
+  text-align: right;
+  font-weight: bold;
 }
 /*# sourceMappingURL=app.css.map */

@@ -148,15 +148,16 @@
                           </nav>
                           <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-transactionOut" role="tabpanel" aria-labelledby="nav-transactionOut">
-                                <div class="row my-3">
+                                <div class="row my-2">
                                     <div class="col-md-12 my-3">
+                                       <div class="row">
                                         <div class="col-md-9">
                                             <form class="form-inline"> 
                                                 <div class="row">
                                                     <div class="col-md-5 d-flex align-items-center">
                                                         <div class="form-group d-flex mt-4">
                                                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                                            <button class="text-white btn-theme ml-1" type="submit">Search</button>
                                                           </div>
                                                     </div>
                                                     <div class="col-md-3">
@@ -174,62 +175,65 @@
                                                 </div> 
                                               </form>
                                         </div>
-                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                            <div>
+                                                <button title="Download" class="btn btn-sm btn-info text-white">Download PDF</button>
+                                                <button title="Download" class="btn btn-sm btn-secondary">Download excel</button>
+                                            </div>
+                                        </div>
+                                       </div>
                                     </div>
                                     <div class="col-md-12 mt-2">
                                         <div class="overflow">
                                             <table class="table table-custom shadow-sm bg-white">
                                                 <thead>
-                                                    <tr>
-                                                        <th>#Order Id</th>
+                                                    <tr> 
                                                         <th>date</th>
-                                                        <th>amount</th>
-                                                        <th>Delivery Status</th>
-                                                        <th>Payment Status</th>
-                                                        <th>Payment </th>
-                                                        <th>Action </th>
+                                                        <th>Charity</th>
+                                                        <th>Source</th>
+                                                        <th>Transaction ID</th>
+                                                        <th>Amount </th> 
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="#">20210807-021000</a></td>
-                                                        <td>07-08-2021</td>
-                                                        <td>৳37.00</td>
-                                                        <td>Pending</td>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>Online</td>
                                                         <td>
-                                                            <div class="unpaid">unpaid</div>
+                                                            0214578
                                                         </td>
-                                                        <td><button class="pay-now">pay now</button></td>
-                                                        <td>
-                                                            <div class="action">
-                                                                <span onclick="alert()" title="Order Details"
-                                                                    class="iconify"
-                                                                    data-icon="icon-park-outline:transaction-order"></span>
-                                                                <span onclick="alert()" title="Download Invoice"
-                                                                    class="iconify"
-                                                                    data-icon="carbon:download-study"></span>
-                                                            </div>
-                                                        </td>
+                                                        <td>$124.0</td>
+                                                      
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="#">20210807-021000</a></td>
-                                                        <td>07-08-2021</td>
-                                                        <td>৳37.00</td>
-                                                        <td>Pending</td>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>On request</td>
                                                         <td>
-                                                            <div class="paid">paid</div>
+                                                            0214578
                                                         </td>
-                                                        <td><button class="pay-now">pay now</button></td>
+                                                        <td>$124.0</td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>Campaign</td>
                                                         <td>
-                                                            <div class="action">
-                                                                <span onclick="alert()" title="Order Details"
-                                                                    class="iconify"
-                                                                    data-icon="icon-park-outline:transaction-order"></span>
-                                                                <span onclick="alert()" title="Download Invoice"
-                                                                    class="iconify"
-                                                                    data-icon="carbon:download-study"></span>
-                                                            </div>
+                                                            0214578
                                                         </td>
+                                                        <td>$124.0</td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>voucher</td>
+                                                        <td>
+                                                           32453254
+                                                        </td>
+                                                        <td>$124.0</td> 
                                                     </tr>
 
                                                 </tbody>
@@ -239,7 +243,93 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-transcationIn" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row my-2">
+                                    <div class="col-md-12 my-3">
+                                       <div class="row">
+                                        <div class="col-md-9">
+                                            <form class="form-inline"> 
+                                                <div class="row"> 
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for=""><small>Date From </small> </label>
+                                                            <input class="form-control mr-sm-2" type="date" placeholder="Search" aria-label="Search"> 
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for=""><small>Date To </small> </label>
+                                                            <input class="form-control mr-sm-2" type="date" placeholder="Search" aria-label="Search"> 
+                                                          </div>
+                                                    </div>
+                                                </div> 
+                                              </form>
+                                        </div>
+                                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                            <div>
+                                                <button title="Download" class="btn btn-sm btn-info text-white">Download PDF</button>
+                                                <button title="Download" class="btn btn-sm btn-secondary">Download excel</button>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-12 mt-2">
+                                        <div class="overflow">
+                                            <table class="table table-custom shadow-sm bg-white">
+                                                <thead>
+                                                    <tr> 
+                                                        <th>date</th>
+                                                        <th>Charity</th>
+                                                        <th>Source</th>
+                                                        <th>Transaction ID</th>
+                                                        <th>Amount </th> 
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>Online</td>
+                                                        <td>
+                                                            0214578
+                                                        </td>
+                                                        <td>$124.0</td>
+                                                      
+                                                    </tr>
+                                                    <tr>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>On request</td>
+                                                        <td>
+                                                            0214578
+                                                        </td>
+                                                        <td>$124.0</td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>Campaign</td>
+                                                        <td>
+                                                            0214578
+                                                        </td>
+                                                        <td>$124.0</td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                       <td>07-08-2021</td>
+                                                        <td>Charity Name</td>
+                                                        <td>voucher</td>
+                                                        <td>
+                                                           32453254
+                                                        </td>
+                                                        <td>$124.0</td> 
+                                                    </tr>
 
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                            
                           </div>
@@ -254,101 +344,10 @@
 
     <footer class="py-3 ">
         <div class="container">
-            <div class="my-4">
-                <div class="row justify-content-lg-between">
-                    <div class="col-lg-3 col-lg-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-white">INFORMATION</h5>
-                        <!-- Nav Link -->
-                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/account">Account</a></li>
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/about-us">About Us</a></li>
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/privacy.html">Privacy Policy</a></li>
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/tos.html">Terms and Conditions</a></li>
-                        </ul>
-                        <!-- End Nav Link -->
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-white">USEFUL LINKS</h5>
-                        <!-- Nav Link -->
-                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                            <li class="nav-item py-1"><a class="text-white" href="https://www.rabibar.com/faq">FAQ</a>
-                            </li>
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/addresses">Addresses</a></li>
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/brands">Medicines</a></li>
-
-                            <li class="nav-item py-1"><a class="text-white"
-                                    href="https://www.rabibar.com/offers">Special Offers</a></li>
-                        </ul>
-                        <!-- End Nav Link -->
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <!-- End Nav Link -->
-                        <div id="contact">
-                            <h5 class="text-white">CONTACT US</h5>
-                            <div class="text-white">
-                                <span class="iconify" data-icon="dashicons:phone" data-inline="false"></span>
-                                01886335834
-                            </div>
-                            <ul class="list-inline mb-0 mt-3 social-sites">
-                                <li class="list-inline-item">
-                                    <a class="text-white" href="">
-                                        <span class="iconify" data-icon="ant-design:facebook-filled"
-                                            data-inline="false"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-white" href="">
-                                        <span class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-white" href="">
-                                        <span class="iconify" data-icon="fa-brands:twitter-square"
-                                            data-inline="false"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-white" href="">
-                                        <span class="iconify" data-icon="fa-brands:instagram-square"
-                                            data-inline="false"></span>
-                                    </a>
-                                </li>
-                                <!-- End Social Networks -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-white">OUR APP</h5>
-                        <!-- Nav Link -->
-                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                            <li class="nav-item w-100">
-                                <a class="py-1 d-block app_download_link" href=" ">
-                                    <img loading="lazy" class='img-fluid'
-                                        src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
-                                </a>
-                            </li>
-                            <li class="nav-item w-100">
-                                <a class="py-1 d-block app_download_link" href=" "><img class='img-fluid' loading="lazy"
-                                        src="./images/images/apple_store.png"></a>
-                            </li>
-                        </ul>
-                        <!-- End Nav Link -->
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4" style="background:rgba(255,255,255,0.5)">
             <div class="space-1">
-                <!-- Copyright -->
                 <div class="text-lg-center mx-lg-auto">
-                    <p class="text-white small">© 2021 Apon Health Limited. All rights reserved.</p>
+                    <p class="mb-0 text-white small">© 2022 charity limited. All rights reserved.</p>
                 </div>
-                <!-- End Copyright -->
             </div>
         </div>
     </footer>
