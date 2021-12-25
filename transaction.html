@@ -1,0 +1,366 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity </title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
+</head>
+
+<body>
+ 
+    <div class="dashbaord-main">
+        <div class="leftSection" id='leftSidebar'>
+            <!-- <div class="brand">
+                <img src="images/logo.png" alt="">
+            </div> -->
+            <div class="user-profile">
+                <div class="close-dashboard-sidebar">
+                    <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
+                </div>
+                <img src="images/profile.png" alt="">
+                <p class='user-name mb-0'>
+                    <span>John</span>
+                    <span>Landish</span>
+                </p>
+            </div>
+            <nav class="sidenav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="index.html">
+                            <span class="iconify" data-icon="clarity:dashboard-solid-badged"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="purchase-history.html">
+                            <span class="iconify" data-icon="raphael:history"></span>
+                            Purchase History
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="wishlist.html">
+                            <span class="iconify" data-icon="clarity:heart-solid"></span>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="profile.html">
+                            <span class="iconify" data-icon="icomoon-free:profile"></span>
+                            Manage Profile
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="wallet.html">
+                            <span class="iconify" data-icon="fontisto:wallet"></span>
+                            My Wallet
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="upload-prescription.html">
+                            <span class="iconify" data-icon="fluent:note-add-16-filled"></span>
+                            Upload Prescription
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="bpmn:end-event-message"></span>
+                            Request Message
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="ic:outline-medication"></span>
+                            Add Medication
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="change-password.html">
+                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
+                            Change Password
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="addMedication.html">
+                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
+                            add Medication
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <span class="iconify" data-icon="ic:baseline-space-dashboard"></span>
+                            Submenu Item
+                        </a>
+                        <ul class="sub-item">
+                            <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
+                                    items 1</a></li>
+                            <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
+                                    items 1</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="rightSection">
+            <div class="topbar">
+                <div class="fold" onclick='foldSidebar();'>
+                    <span class="iconify" data-icon="eva:menu-fill"></span>
+                </div>
+                <!-- <img src="images/logo.png" class="mobile-menu-logo"> -->
+                <div class="right-element"> 
+                    <div class="dropdown">
+                        <a href="#"  class="btn dropdown-toggle profile-manage" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/profile.png">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                data-icon="carbon:user-avatar"></span> Profile</a>
+                        <a class="dropdown-item" href="#"><span class="iconify"
+                                data-icon="ion:log-out-outline"></span> Log Out</a>
+                        </ul>
+                      </div>
+                </div>
+
+            </div>
+            <div class="dashboard-content">
+                <section class="profile purchase-status">
+                    <div class="title-section">
+                        <span class="iconify" data-icon="et:wallet"></span> <div class="mx-2">View All Transactions</div>
+                    </div> 
+                </section>
+              <section class="px-4"> 
+                <div class="row  my-3">
+                   
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                              <button class="nav-link active" id="transactionOut-tab" data-bs-toggle="tab" data-bs-target="#nav-transactionOut" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Transaction Out</button>
+                              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-transcationIn" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Transcation In</button>
+ 
+                            </div>
+                          </nav>
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-transactionOut" role="tabpanel" aria-labelledby="nav-transactionOut">
+                                <div class="row my-3">
+                                    <div class="col-md-12 my-3">
+                                        <div class="col-md-9">
+                                            <form class="form-inline"> 
+                                                <div class="row">
+                                                    <div class="col-md-5 d-flex align-items-center">
+                                                        <div class="form-group d-flex mt-4">
+                                                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for=""><small>Date From </small> </label>
+                                                            <input class="form-control mr-sm-2" type="date" placeholder="Search" aria-label="Search"> 
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for=""><small>Date To </small> </label>
+                                                            <input class="form-control mr-sm-2" type="date" placeholder="Search" aria-label="Search"> 
+                                                          </div>
+                                                    </div>
+                                                </div> 
+                                              </form>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="col-md-12 mt-2">
+                                        <div class="overflow">
+                                            <table class="table table-custom shadow-sm bg-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#Order Id</th>
+                                                        <th>date</th>
+                                                        <th>amount</th>
+                                                        <th>Delivery Status</th>
+                                                        <th>Payment Status</th>
+                                                        <th>Payment </th>
+                                                        <th>Action </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#">20210807-021000</a></td>
+                                                        <td>07-08-2021</td>
+                                                        <td>৳37.00</td>
+                                                        <td>Pending</td>
+                                                        <td>
+                                                            <div class="unpaid">unpaid</div>
+                                                        </td>
+                                                        <td><button class="pay-now">pay now</button></td>
+                                                        <td>
+                                                            <div class="action">
+                                                                <span onclick="alert()" title="Order Details"
+                                                                    class="iconify"
+                                                                    data-icon="icon-park-outline:transaction-order"></span>
+                                                                <span onclick="alert()" title="Download Invoice"
+                                                                    class="iconify"
+                                                                    data-icon="carbon:download-study"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">20210807-021000</a></td>
+                                                        <td>07-08-2021</td>
+                                                        <td>৳37.00</td>
+                                                        <td>Pending</td>
+                                                        <td>
+                                                            <div class="paid">paid</div>
+                                                        </td>
+                                                        <td><button class="pay-now">pay now</button></td>
+                                                        <td>
+                                                            <div class="action">
+                                                                <span onclick="alert()" title="Order Details"
+                                                                    class="iconify"
+                                                                    data-icon="icon-park-outline:transaction-order"></span>
+                                                                <span onclick="alert()" title="Download Invoice"
+                                                                    class="iconify"
+                                                                    data-icon="carbon:download-study"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-transcationIn" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                            </div>
+                           
+                          </div>
+                    </div>
+                </div> 
+              </section> 
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    <footer class="py-3 ">
+        <div class="container">
+            <div class="my-4">
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-3 col-lg-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">INFORMATION</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/account">Account</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/about-us">About Us</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/privacy.html">Privacy Policy</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/tos.html">Terms and Conditions</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">USEFUL LINKS</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item py-1"><a class="text-white" href="https://www.rabibar.com/faq">FAQ</a>
+                            </li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/addresses">Addresses</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/brands">Medicines</a></li>
+
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/offers">Special Offers</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <!-- End Nav Link -->
+                        <div id="contact">
+                            <h5 class="text-white">CONTACT US</h5>
+                            <div class="text-white">
+                                <span class="iconify" data-icon="dashicons:phone" data-inline="false"></span>
+                                01886335834
+                            </div>
+                            <ul class="list-inline mb-0 mt-3 social-sites">
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="ant-design:facebook-filled"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:twitter-square"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:instagram-square"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <!-- End Social Networks -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">OUR APP</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item w-100">
+                                <a class="py-1 d-block app_download_link" href=" ">
+                                    <img loading="lazy" class='img-fluid'
+                                        src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="py-1 d-block app_download_link" href=" "><img class='img-fluid' loading="lazy"
+                                        src="./images/images/apple_store.png"></a>
+                            </li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="background:rgba(255,255,255,0.5)">
+            <div class="space-1">
+                <!-- Copyright -->
+                <div class="text-lg-center mx-lg-auto">
+                    <p class="text-white small">© 2021 Apon Health Limited. All rights reserved.</p>
+                </div>
+                <!-- End Copyright -->
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="./js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/iconify.min.js"></script> 
+    <script src='./js/app.js'> </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script> 
+</body>
+
+</html>

@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+}
+
 .theme-primary {
   background-color: #6B3BB1 !important;
 }
@@ -1319,8 +1323,8 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav {
-  width: 90%;
-  margin: 17px auto;
+  width: 100%;
+  margin: 7px auto;
   list-style: none;
   height: 85vh;
   overflow-y: auto;
@@ -1349,7 +1353,6 @@ footer .social-sites li a .iconify {
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover {
   background-color: #0962A8;
-  border-radius: 6px;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover a {
@@ -1362,7 +1365,6 @@ footer .social-sites li a .iconify {
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active {
   background: #0962A8;
-  border-radius: 6px;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active a {
@@ -1631,8 +1633,8 @@ footer .social-sites li a .iconify {
 
 .profile .title-section, .wishlist .title-section {
   background-color: white;
-  padding: 9px 16px;
-  color: #69c5f1;
+  padding: 19px 24px;
+  color: #515e64;
   font-weight: bold;
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -2571,11 +2573,15 @@ footer .social-sites li a .iconify {
   border-radius: 5px;
 }
 
+.transferFunds .para {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .transferFunds .pointer {
   width: 60px;
   height: 60px;
-  -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2595,7 +2601,7 @@ fieldset {
   -webkit-box-shadow: -2px 3px 10px 0px #0000000a;
           box-shadow: -2px 3px 10px 0px #0000000a;
   margin: 20px 0;
-  padding: 25px;
+  padding: 30px;
   border: 1px solid #ebeced;
 }
 

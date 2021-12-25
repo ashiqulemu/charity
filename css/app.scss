@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul{
+  padding: 0;
+}
 
 @import "class.scss";
 
@@ -1142,9 +1145,9 @@ footer {
       }
     }
 
-    .sidenav {
-      width: 90%;
-      margin: 17px auto;
+    .sidenav { 
+      width: 100%;
+      margin: 7px auto;
       list-style: none;
       height: 85vh;
       overflow-y: auto;
@@ -1170,8 +1173,7 @@ footer {
           margin: 1px 0;
 
           &:hover {
-            background-color: #0962A8;
-            border-radius: 6px;
+            background-color: #0962A8; 
 
             a {
               color: $white;
@@ -1183,8 +1185,7 @@ footer {
           }
 
           &.active {
-            background: #0962A8;
-            border-radius: 6px;
+            background: #0962A8; 
 
             a {
               color: $white;
@@ -1433,9 +1434,9 @@ footer {
 
 .profile {
   .title-section {
-    background-color: lighten($primary, 60%);
-    padding: 9px 16px;
-    color: $primary;
+    background-color: lighten($primary, 60%); 
+    padding: 19px 24px;
+    color: #515e64;
     font-weight: bold;
     text-transform: capitalize;
     font-size: 1.1rem;
@@ -2264,10 +2265,12 @@ footer {
   padding: 14px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
+  .para{
+    flex: 1;
+  }
   .pointer{
     width: 60px;
-    height: 60px;
-    flex-basis: 100px;
+    height: 60px; 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2288,7 +2291,7 @@ footer {
 fieldset{
   box-shadow: -2px 3px 10px 0px #0000000a;
   margin: 20px 0;
-  padding: 25px;
+  padding: 30px;
   border: 1px solid #ebeced;
   
   legend{
@@ -2298,3 +2301,5 @@ fieldset{
     padding: 0 10px;
   }
 }
+
+ 
