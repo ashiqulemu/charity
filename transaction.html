@@ -15,7 +15,7 @@
 <body>
  
     <div class="dashbaord-main">
-        <div class="leftSection" id='leftSidebar'>
+        <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
             <!-- <div class="brand">
                 <img src="images/logo.png" alt="">
             </div> -->
@@ -23,87 +23,53 @@
                 <div class="close-dashboard-sidebar">
                     <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
                 </div>
-                <img src="images/profile.png" alt="">
-                <p class='user-name mb-0'>
-                    <span>John</span>
-                    <span>Landish</span>
-                </p>
+                <img src="images/company-logo-your-logo.png" alt="">
             </div>
             <nav class="sidenav">
                 <ul>
                     <li class="nav-item active">
-                        <a href="index.html">
+                        <a href="./index.html">
                             <span class="iconify" data-icon="clarity:dashboard-solid-badged"></span>
                             Dashboard
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="purchase-history.html">
-                            <span class="iconify" data-icon="raphael:history"></span>
-                            Purchase History
+                        <a href="./transaction.html"> 
+                            <span class="iconify" data-icon="icon-park-outline:transaction"></span>
+                            view transaction
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="wishlist.html">
+                        <a href="./donation.html">
                             <span class="iconify" data-icon="clarity:heart-solid"></span>
-                            Wishlist
+                            Make a Donation
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="profile.html">
+                        <a href="./standing-orders.html">
                             <span class="iconify" data-icon="icomoon-free:profile"></span>
-                            Manage Profile
+                            Standing Orders
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="wallet.html">
+                        <a href="order-voucher-book.html">
                             <span class="iconify" data-icon="fontisto:wallet"></span>
-                            My Wallet
+                            Order voucher book
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="upload-prescription.html">
+                        <a href="faq.html">
                             <span class="iconify" data-icon="fluent:note-add-16-filled"></span>
-                            Upload Prescription
+                            FAQ
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#">
-                            <span class="iconify" data-icon="bpmn:end-event-message"></span>
-                            Request Message
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#">
-                            <span class="iconify" data-icon="ic:outline-medication"></span>
-                            Add Medication
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="change-password.html">
-                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
-                            Change Password
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="addMedication.html">
-                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
-                            add Medication
+                        <a href="contact.html">
+                            <span class="iconify" data-icon="fluent:contact-card-28-regular"></span>
+                            Contact
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="#">
-                            <span class="iconify" data-icon="ic:baseline-space-dashboard"></span>
-                            Submenu Item
-                        </a>
-                        <ul class="sub-item">
-                            <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
-                                    items 1</a></li>
-                            <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
-                                    items 1</a></li>
-                        </ul>
-                    </li>
 
                 </ul>
             </nav>
@@ -132,7 +98,7 @@
             <div class="dashboard-content">
                 <section class="profile purchase-status">
                     <div class="title-section">
-                        <span class="iconify" data-icon="et:wallet"></span> <div class="mx-2">View All Transactions</div>
+                        <span class="iconify" data-icon="icon-park-outline:transaction"></span> <div class="mx-2">View All Transactions</div>
                     </div> 
                 </section>
               <section class="px-4"> 
@@ -344,9 +310,21 @@
 
     <footer class="py-3 ">
         <div class="container">
-            <div class="space-1">
-                <div class="text-lg-center mx-lg-auto">
-                    <p class="mb-0 text-white small">© 2022 charity limited. All rights reserved.</p>
+            <div class="d-flex flex-wrap">
+               
+                <div class=" flex-fill bd-highlight ">
+                    <ul class="m-0 text-white">
+                        <li class="list-style-none">+44 (0)xx xxxx 8xxxx</li>
+                        <li class="list-style-none">support@admin.com</li>
+                        <li class="list-style-none"> address goes here </li>
+                    </ul>
+                </div>
+                <div class="p-2 flex-fill bd-highlight">
+                    <img src="images/company-logo-your-logo.png" width="160px">
+                </div>
+                <div class="p-2 d-flex align-items-center footerContact">
+                    <a href=""class="mx-2 text-decoration-none text-white">Help</a>
+                    <a href="" class="mx-2 text-decoration-none text-white">Contact</a>
                 </div>
             </div>
         </div>

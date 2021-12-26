@@ -1132,7 +1132,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 footer {
-  background: #51b9e9;
+  background: #02547a;
 }
 
 footer h5 {
@@ -1352,7 +1352,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover {
-  background-color: #0962A8;
+  background-color: #43608b;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover a {
@@ -1364,7 +1364,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active {
-  background: #0962A8;
+  background: #43608b;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active a {
@@ -1384,7 +1384,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item li a:hover {
-  background: #0064A4 !important;
+  background: #43608b !important;
   color: #fff;
 }
 
@@ -1401,7 +1401,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item a .iconify {
-  color: #559ffb;
+  color: #43608b;
   margin-right: 8px;
 }
 
@@ -2572,9 +2572,11 @@ footer .social-sites li a .iconify {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 14px;
+  padding: 22px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
+  color: #646464;
+  background: #fff;
 }
 
 .transferFunds .para {
@@ -2602,6 +2604,7 @@ footer .social-sites li a .iconify {
 }
 
 fieldset {
+  background: #e1e1e147;
   -webkit-box-shadow: -2px 3px 10px 0px #0000000a;
           box-shadow: -2px 3px 10px 0px #0000000a;
   margin: 20px 0;
@@ -2713,7 +2716,7 @@ fieldset legend {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 10px 0;
+  padding: 13px 0;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -2734,5 +2737,21 @@ fieldset legend {
 .orderVoucher .voucher .items:nth-child(3) {
   text-align: right;
   font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #f9fafb;
+  font-weight: bold;
+  background-color: #69c5f2;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.footerContact a:hover {
+  color: #89c9ff !important;
 }
 /*# sourceMappingURL=app.css.map */

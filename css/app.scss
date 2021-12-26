@@ -951,7 +951,7 @@ body {
 }
 
 footer {
-  background: #51b9e9;
+  background: #02547a;
 
   h5 {
     font-size: 18px;
@@ -1174,7 +1174,7 @@ footer {
           margin: 1px 0;
 
           &:hover {
-            background-color: #0962A8;
+            background-color: #43608b;
 
             a {
               color: $white;
@@ -1186,7 +1186,7 @@ footer {
           }
 
           &.active {
-            background: #0962A8;
+            background: #43608b;
 
             a {
               color: $white;
@@ -1205,7 +1205,7 @@ footer {
                   background: #efe6fd !important;
 
                   &:hover {
-                    background: #0064A4 !important;
+                    background: #43608b !important;
                     color: #fff;
 
                     .iconify {
@@ -1226,7 +1226,7 @@ footer {
             text-transform: capitalize;
 
             .iconify {
-              color: #559ffb;
+              color: #43608b;
               margin-right: 8px;
             }
           }
@@ -2270,9 +2270,11 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 14px;
+  padding: 22px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
+  color: #646464;
+  background: #fff;
 
   .para {
     flex: 1;
@@ -2299,6 +2301,7 @@ footer {
 
 
 fieldset {
+  background: #e1e1e147;
   box-shadow: -2px 3px 10px 0px #0000000a;
   margin: 20px 0;
   padding: 30px;
@@ -2398,7 +2401,7 @@ fieldset {
   .voucher{
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: 13px 0;
     border-bottom: 1px solid #ebebeb;
     .items{
       flex: 1;
@@ -2413,5 +2416,25 @@ fieldset {
         font-weight: bold;
       }
     }
+  }
+}
+
+
+// faqs
+.accordion-button:not(.collapsed) {
+  color: #f9fafb;
+  font-weight: bold;
+  background-color: #69c5f2;
+  box-shadow: none!important;
+}
+
+.list-style-none{
+  list-style-type: none;
+}
+.footerContact{
+  a {
+   &:hover{
+     color: #89c9ff!important;
+   }
   }
 }
