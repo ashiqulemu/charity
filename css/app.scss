@@ -1197,18 +1197,26 @@ footer {
 
             }
 
-            &.collaps {
+            &.collaps{
               .sub-item {
-                display: block !important;
-
+                display: block !important;  
                 li {
+                  &.collaps{
+                    a{
+                      background-color: #5c82b9 !important;
+                      color :#fff;
+                      .iconify {
+                        color: $white;
+                      }
+                    }
+                  }
                   a {
                     background: #efe6fd !important;
-
+  
                     &:hover {
                       background: #43608b !important;
                       color: #fff;
-
+  
                       .iconify {
                         color: $white;
                       }
